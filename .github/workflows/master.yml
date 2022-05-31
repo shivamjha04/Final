@@ -9,8 +9,7 @@ jobs:
     steps:
       - name: Checkout Latest Repo
         uses: actions/checkout@master
-      - run: npm ci
-      - run: npm run build --if-present
+      - run: npm install
       - run: npm test
         
       - name: Generate Deployment Package 
