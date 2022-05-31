@@ -10,7 +10,7 @@ jobs:
       - name: Checkout Latest Repo
         uses: actions/checkout@master
       - run: npm install
-      - run: npm run script build
+      - run: npm build
       - run: npm test
         
       - name: Generate Deployment Package 
