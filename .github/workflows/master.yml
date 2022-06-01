@@ -12,6 +12,11 @@ jobs:
       - run: npm install
       - run: npm run build
       - run: npm test
+      - name: SonarCloud Scan
+        uses: SonarSource/sonarcloud-github-action@master
+        env:
+          GITHUB_TOKEN: ${{ secrets.TOKEN }}
+          SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
         
       - name: Generate Deployment Package 
         run: zip -r deploy.zip * -x "**node_modules**"
