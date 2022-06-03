@@ -7,7 +7,7 @@ function App() {
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
-          Finally done
+          Finally done 1.0
         </p>
         <a
           className="App-link"
@@ -22,4 +22,4 @@ function App() {
   );
 }
 
-export default App;
+export default ;
